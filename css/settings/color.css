@@ -2,4 +2,6 @@
     --color-first: #ffffff;
     --color-gray: #3f4954;
     --color-midnight: #104f55;
+    --color-sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    
 }
