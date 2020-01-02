@@ -1,0 +1,8 @@
+.menu {
+    font-family: var(--Abel);
+}
+
+.menu > .item:hover > .action {
+    background-color: var(--color-midnight);
+    color: var(--color-first);
+}
