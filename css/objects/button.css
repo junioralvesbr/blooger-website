@@ -1,0 +1,7 @@
+.button {
+    font-family: var(--Livvic);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-image: var(--color-sky);
+}
