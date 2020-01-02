@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blooger Website</title>
 
+
     <link rel="stylesheet" href="css/settings/awesome.css">
     <link rel="stylesheet" href="css/settings/fonts.css">
     <link rel="stylesheet" href="css/settings/color.css">
@@ -19,12 +20,18 @@
     <link rel="stylesheet" href="css/objects/title.css">
     <link rel="stylesheet" href="css/objects/subtitle.css">
     <link rel="stylesheet" href="css/objects/button.css">
+    <link rel="stylesheet" href="css/objects/arrow.css">
     
 
     <link rel="stylesheet" href="css/component/nav-menu.css">
     <link rel="stylesheet" href="css/component/main-header.css">
+    <link rel="stylesheet" href="css/component/blog-carousel.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     
 </head>
+
 <body>
 
     <nav class="nav-menu">
@@ -52,13 +59,120 @@
 
     <header class="main-header">
 
-        <section class="container">
+        <section class="container" data-aos="fade-up" data-aos-delay="100">
             <h3 class="subtitle">Tours & Travels</h3>
             <h1 class="title">Amazing place on Earth</h1>    
             <button class="button">Explorer</button>
         </section>
 
     </header>
+
+    <main>
+
+        <section class="blog-carousel">
+
+             <!-- If we need navigation buttons -->
+             <div class="arrow">
+                 <div class="swiper-button-prev"><i class="fas fa-long-arrow-alt-left"></i></div>
+                 <div class="swiper-button-next"><i class="fas fa-long-arrow-alt-right"></i></div>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="swiper-container">
+            <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <article class="blog-cards swiper-slide">
+                        <div class="container">
+                            <img class="image" src="assets/img/Blog-post/post-1.jpg" alt="Post-1">
+                            <div class="blog-titles">
+                                <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
+                                <button class="button">Fashion</button>
+                                <span class="text">2 minutes</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-cards swiper-slide">
+                        <div class="container">
+                            <img class="image" src="assets/img/Blog-post/post-2.jpg" alt="Post-2">
+
+                            <div class="blog-titles">
+                                <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
+                                <button class="button">Fashion</button>
+                                <span class="text">2 minutes</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-cards swiper-slide">
+                        <div class="container">
+                            <img class="image" src="assets/img/Blog-post/post-3.jpg" alt="Post-3">
+                            <div class="blog-titles">
+                                <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
+                                <button class="button">Fashion</button>
+                                <span class="text">2 minutes</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-cards swiper-slide">
+                        <div class="container">
+                            <img class="image" src="assets/img/Blog-post/post-4.png" alt="Post-4">
+
+                            <div class="blog-titles">
+                                <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
+                                <button class="button">Fashion</button>
+                                <span class="text">2 minutes</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-cards swiper-slide">
+                        <div class="container">
+                            <img class="image" src="assets/img/Blog-post/post-5.png" alt="Post-5">
+                            <div class="blog-titles">
+                                <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
+                                <button class="button">Fashion</button>
+                                <span class="text">2 minutes</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-cards swiper-slide">
+                        <div class="container">
+                            <img class="image" src="assets/img/Blog-post/post-6.png" alt="Post-6">
+
+                            <div class="blog-titles">
+                                <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
+                                <button class="button">Fashion</button>
+                                <span class="text">2 minutes</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            <!-- If we need pagination
+            <div class="swiper-pagination"></div> -->
+
+             
+
+            <!-- If we need scrollbar
+            <div class="swiper-scrollbar"></div> -->
+            </div>
+
+           
+
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+    
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.js"></script> -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/swiper.js"></script>
 
 </body>
 

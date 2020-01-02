@@ -1,3 +1,7 @@
 .subtitle {
     color: var(--color-first);
 }
+
+.subtitle.-dark {
+    color: var(--color-dark);
+}
