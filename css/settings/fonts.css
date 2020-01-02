@@ -27,3 +27,11 @@
     font-family: Livvic;
     src: url('../../assets/Livvic/Livvic-Regular.ttf');
 }
+
+:root {
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin : 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic : 'Livvic', cursive;
+}
