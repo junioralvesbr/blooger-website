@@ -1,0 +1,23 @@
+.arrow {
+    background-color: yellow;
+}
+
+.arrow > .swiper-button-prev,
+.arrow > .swiper-button-next {
+    color: var(--color-gray);
+}
+
+.arrow > .swiper-button-prev:hover,
+.arrow > .swiper-button-next:hover {
+    color: var(--color-midnight);
+}
+
+.arrow > .swiper-button-prev:focus,
+.arrow > .swiper-button-next:focus {
+    border: none;
+}
+
+.arrow > .swiper-button-prev:after,
+.arrow > .swiper-button-next:after {
+    display: none;
+}
