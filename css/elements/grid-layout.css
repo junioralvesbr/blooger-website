@@ -1,18 +1,8 @@
+.main-container {
+    margin: 0 2rem;
+}
+
 .grid-layout {
     display: grid;
-    grid-template-areas: 
-        "main main aside"
-        "footer footer footer";
-}
-
-.grid-main {
-    grid-area: main;
-}
-
-.grid-aside {
-    grid-area: aside;
-}
-
-.grid-footer {
-    grid-area: footer;
+    grid-template-columns: 70% 30%;
 }
