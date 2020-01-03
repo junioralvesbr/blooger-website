@@ -1,0 +1,18 @@
+.grid-layout {
+    display: grid;
+    grid-template-areas: 
+        "main main aside"
+        "footer footer footer";
+}
+
+.grid-main {
+    grid-area: main;
+}
+
+.grid-aside {
+    grid-area: aside;
+}
+
+.grid-footer {
+    grid-area: footer;
+}
