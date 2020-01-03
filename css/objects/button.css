@@ -5,3 +5,7 @@
     cursor: pointer;
     background-image: var(--color-sky);
 }
+
+.button.-square {
+    border-radius: 0;
+}
