@@ -1,0 +1,8 @@
+.post-title .action {
+    font-family: var(--Anton);
+}
+
+.post-title .text {
+    font-family: var(--Lexend);
+    color: var(--color-light);
+}

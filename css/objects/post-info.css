@@ -1,0 +1,9 @@
+.post-info {
+    font-family: var(--Abel);
+    background-image: var(--color-sky);
+    border-radius: 3rem;
+}
+
+.post-info .fas {
+    color: var(--color-gray);
+}

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/generic/reset.css">
 
     <link rel="stylesheet" href="css/elements/base.css">
+    <link rel="stylesheet" href="css/elements/grid-layout.css">
 
     <link rel="stylesheet" href="css/objects/menu.css">
     <link rel="stylesheet" href="css/objects/logo.css">
@@ -21,11 +22,13 @@
     <link rel="stylesheet" href="css/objects/subtitle.css">
     <link rel="stylesheet" href="css/objects/button.css">
     <link rel="stylesheet" href="css/objects/arrow.css">
+    <link rel="stylesheet" href="css/objects/post-info.css">
+    <link rel="stylesheet" href="css/objects/post-title.css">
     
-
     <link rel="stylesheet" href="css/component/nav-menu.css">
     <link rel="stylesheet" href="css/component/main-header.css">
     <link rel="stylesheet" href="css/component/blog-carousel.css">
+    <link rel="stylesheet" href="css/component/post-content.css">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
@@ -67,105 +70,192 @@
 
     </header>
 
-    <main>
+    <section class="blog-carousel">
 
-        <section class="blog-carousel">
+        <!-- If we need navigation buttons -->
+        <div class="arrow">
+            <div class="swiper-button-prev"><i class="fas fa-long-arrow-alt-left"></i></div>
+            <div class="swiper-button-next"><i class="fas fa-long-arrow-alt-right"></i></div>
+        </div>
 
-             <!-- If we need navigation buttons -->
-             <div class="arrow">
-                 <div class="swiper-button-prev"><i class="fas fa-long-arrow-alt-left"></i></div>
-                 <div class="swiper-button-next"><i class="fas fa-long-arrow-alt-right"></i></div>
-            </div>
-
-            <!-- Slider main container -->
-            <div class="swiper-container">
+        <!-- Slider main container -->
+        <div class="swiper-container">
             <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
+            <div class="swiper-wrapper">
                 <!-- Slides -->
-                    <article class="blog-cards swiper-slide">
-                        <div class="container">
-                            <img class="image" src="assets/img/Blog-post/post-1.jpg" alt="Post-1">
-                            <div class="blog-titles">
-                                <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
-                                <button class="button">Fashion</button>
-                                <span class="text">2 minutes</span>
-                            </div>
+                <article class="blog-cards swiper-slide" data-aos="fade-right" data-aos-delay="200">
+                    <div class="container">
+                        <img class="image" src="assets/img/Blog-post/post-1.jpg" alt="Post-1">
+                        <div class="blog-titles">
+                            <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
+                            <button class="button">Fashion</button>
+                            <span class="text">2 minutes</span>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
-                    <article class="blog-cards swiper-slide">
-                        <div class="container">
-                            <img class="image" src="assets/img/Blog-post/post-2.jpg" alt="Post-2">
+                <article class="blog-cards swiper-slide"data-aos="fade-in" data-aos-delay="200">
+                    <div class="container">
+                        <img class="image" src="assets/img/Blog-post/post-2.jpg" alt="Post-2">
 
-                            <div class="blog-titles">
-                                <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
-                                <button class="button">Fashion</button>
-                                <span class="text">2 minutes</span>
-                            </div>
+                        <div class="blog-titles">
+                            <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
+                            <button class="button">Fashion</button>
+                            <span class="text">2 minutes</span>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
-                    <article class="blog-cards swiper-slide">
-                        <div class="container">
-                            <img class="image" src="assets/img/Blog-post/post-3.jpg" alt="Post-3">
-                            <div class="blog-titles">
-                                <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
-                                <button class="button">Fashion</button>
-                                <span class="text">2 minutes</span>
-                            </div>
+                <article class="blog-cards swiper-slide" data-aos="fade-left" data-aos-delay="200">
+                    <div class="container">
+                        <img class="image" src="assets/img/Blog-post/post-3.jpg" alt="Post-3">
+                        <div class="blog-titles">
+                            <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
+                            <button class="button">Fashion</button>
+                            <span class="text">2 minutes</span>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
-                    <article class="blog-cards swiper-slide">
-                        <div class="container">
-                            <img class="image" src="assets/img/Blog-post/post-4.png" alt="Post-4">
+                <article class="blog-cards swiper-slide" data-aos="fade-right" data-aos-delay="200">
+                    <div class="container">
+                        <img class="image" src="assets/img/Blog-post/post-4.png" alt="Post-4">
 
-                            <div class="blog-titles">
-                                <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
-                                <button class="button">Fashion</button>
-                                <span class="text">2 minutes</span>
-                            </div>
+                        <div class="blog-titles">
+                            <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
+                            <button class="button">Fashion</button>
+                            <span class="text">2 minutes</span>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
-                    <article class="blog-cards swiper-slide">
-                        <div class="container">
-                            <img class="image" src="assets/img/Blog-post/post-5.png" alt="Post-5">
-                            <div class="blog-titles">
-                                <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
-                                <button class="button">Fashion</button>
-                                <span class="text">2 minutes</span>
-                            </div>
+                <article class="blog-cards swiper-slide" data-aos="fade-in" data-aos-delay="200">
+                    <div class="container">
+                        <img class="image" src="assets/img/Blog-post/post-5.png" alt="Post-5">
+                        <div class="blog-titles">
+                            <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
+                            <button class="button">Fashion</button>
+                            <span class="text">2 minutes</span>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
-                    <article class="blog-cards swiper-slide">
-                        <div class="container">
-                            <img class="image" src="assets/img/Blog-post/post-6.png" alt="Post-6">
+                <article class="blog-cards swiper-slide" data-aos="fade-left" data-aos-delay="200">
+                    <div class="container">
+                        <img class="image" src="assets/img/Blog-post/post-6.png" alt="Post-6">
 
-                            <div class="blog-titles">
-                                <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
-                                <button class="button">Fashion</button>
-                                <span class="text">2 minutes</span>
-                            </div>
+                        <div class="blog-titles">
+                            <h3 class="subtitle -dark">London Fashion week's continued the evolution</h3>
+                            <button class="button">Fashion</button>
+                            <span class="text">2 minutes</span>
                         </div>
-                    </article>
-                </div>
+                    </div>
+                </article>
 
-            <!-- If we need pagination
-            <div class="swiper-pagination"></div> -->
-
-             
-
-            <!-- If we need scrollbar
-            <div class="swiper-scrollbar"></div> -->
             </div>
+        </div>
+    </section>
 
-           
+    <section class="main-container">
+        <div class="grid-layout">
 
-        </section>
+            <main>
 
-    </main>
+                <article class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="post-image">
+                        <figure class="image-content">
+                            <img src="assets/img/Blog-post/blog1.png" class="image" alt="blog1">    
+                        </figure>
+                        <div class="post-info">
+                            <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;Admin</span>
+                            <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;january 14, 2019</span>
+                            <span>2 Comments</span>
+                        </div>
+                    </div>
+
+                    <div class="post-title">
+                        <a class="action" href="#">Why should boys have all the fun? it's the women who are making india an alcohol-loving contry</a>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde? 
+                        </p>
+                        <button class="button -square">Read More&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+                <hr>
+
+                <article class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="post-image">
+                        <figure class="image-content">
+                            <img src="assets/img/Blog-post/blog2.png" class="image" alt="blog2">    
+                        </figure>
+                        <div class="post-info">
+                            <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;Admin</span>
+                            <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;january 14, 2019</span>
+                            <span>2 Comments</span>
+                        </div>
+                    </div>
+
+                    <div class="post-title">
+                        <a class="action" href="#">Why should boys have all the fun? it's the women who are making india an alcohol-loving contry</a>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde? 
+                        </p>
+                        <button class="button -square">Read More&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+                <hr>
+
+                <article class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="post-image">
+                        <figure class="image-content">
+                            <img src="assets/img/Blog-post/blog3.png" class="image" alt="blog3">    
+                        </figure>
+                        <div class="post-info">
+                            <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;Admin</span>
+                            <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;january 14, 2019</span>
+                            <span>2 Comments</span>
+                        </div>
+                    </div>
+
+                    <div class="post-title">
+                        <a class="action" href="#">Why should boys have all the fun? it's the women who are making india an alcohol-loving contry</a>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde? 
+                        </p>
+                        <button class="button -square">Read More&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+                <hr>
+
+                <article class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="post-image">
+                        <figure class="image-content">
+                            <img src="assets/img/Blog-post/blog4.png" class="image" alt="blog4">    
+                        </figure>
+                        <div class="post-info">
+                            <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;Admin</span>
+                            <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;january 14, 2019</span>
+                            <span>2 Comments</span>
+                        </div>
+                    </div>
+
+                    <div class="post-title">
+                        <a class="action" href="#">Why should boys have all the fun? it's the women who are making india an alcohol-loving contry</a>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde? 
+                        </p>
+                        <button class="button -square">Read More&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+                <hr>
+
+            </main>
+
+            <aside>
+
+            </aside>
+        </div>
+    </section>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/aos.js"></script>
