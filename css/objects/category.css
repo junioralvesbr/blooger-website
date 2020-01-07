@@ -1,0 +1,10 @@
+.category-list > .list > .item {
+    background-image: var(--color-sky);
+    border-radius: 3rem;
+}
+
+.category-list > .list .action,
+.category-list > .list span {
+    font-family: var(--Livvic);
+    color: var(--color-dark);
+}

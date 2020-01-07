@@ -46,3 +46,32 @@
     font-size: 1rem;
     padding: .7rem 1.5rem;
 }
+
+/* Popular post */
+
+.popular-post > .subtitle {
+    font-size: 1.5rem;
+    padding-top: 8rem;
+    margin-bottom: 1.2rem;
+}
+
+.post-content.-popular {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.post-content > .post-image.-popular {
+    padding: 2rem 2rem;
+}
+
+.post-content .post-info.-popular {
+    left: 12px;
+    right: 0;
+    width: 51%;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.post-content > .post-title > .action.-popular {
+    font-size: 1rem;
+}
