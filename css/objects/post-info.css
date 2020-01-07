@@ -7,3 +7,9 @@
 .post-info .fas {
     color: var(--color-gray);
 }
+
+.post-info.-popular {
+    background-image: none;
+    background-color: var(--color-first);
+    border-radius: 0;
+}
