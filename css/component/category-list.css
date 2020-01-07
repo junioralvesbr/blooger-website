@@ -1,0 +1,18 @@
+.category-list > .subtitle {
+    font-size: 1.5rem;    
+    margin-top: 1.25rem;
+}
+
+.category-list > .list {
+    padding-left: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.category-list > .list .item {
+    width: 70%;
+    padding: .8rem 1rem;
+    margin: .8rem 0;
+    display: flex;
+    justify-content: space-between;
+}
