@@ -1,0 +1,5 @@
+.main-pagination .action:not(:first-child):not(:last-child) {
+    color: var(--color-first);
+    background-color: var(--color-gray);
+    border-radius: 2rem;
+}

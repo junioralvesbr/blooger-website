@@ -1,0 +1,11 @@
+.main-pagination {
+    width: 100%;
+    margin: 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-pagination .action {
+    margin: 0 .3rem;
+    padding: .6rem .9rem;
+}
