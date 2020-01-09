@@ -1,0 +1,7 @@
+.social .action:hover {
+    color: #a1c4cf;
+}
+
+.social > .action.-light {
+    color: var(--color-first);
+}

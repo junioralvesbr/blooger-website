@@ -1,0 +1,67 @@
+.main-footer {
+    background-color: var(--color-bg);
+    height: 100%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 5vw;
+}
+
+.footer-container > .content {
+    padding: 3rem .9rem;
+}
+
+.footer-container > .content .subtitle{
+    font-size: 1.5em;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+
+.footer-container > .content .text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-container .content input {
+    font-family: var(--Josefin);
+    font-size: 1rem;;
+    border: none;
+    background: var(--color-dark);
+    color: var(--color-first);
+    width: 54%;
+    padding: .5rem .7rem;
+}
+
+.footer-container .content span {
+    font-family: var(--Abel);
+    background: var(--color-sky);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+
+
+.footer-container > .content > .instagran {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-container .content .image {
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+.footer-container .social > .action {
+    padding: 0 .4rem;
+}
+
+.main-footer .text.-center {
+    text-align: center;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+}
